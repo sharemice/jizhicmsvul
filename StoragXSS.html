@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jizhicms Storag XSS</title>
+</head>
+<body>
+<span>Reflective xsss exists in jizhicms 1.7.1</span></br>
+<span>Official website:https://www.jizhicms.cn/</span></br>
+<span>Download address: https://github.com/Cherry-toto/jizhicms/archive/v1.7.1.zip</span></br>
+<span>payload:&lt;details open ontoggle= confirm(document[`coo`+`kie`])&gt;</span></br>
+
+<span>After registering users at the front desk, click publish article and fill in payload in the title of the article</span></br>
+<img src=fxss/2.png></br>
+<span>Sign in admin.php Background, enter the website management - content list, find the document, click Edit, and then click save.</span></br>
+<img src=fxss/3.png></br>
+<img src=fxss/4.png>
+</body>
+</html>
